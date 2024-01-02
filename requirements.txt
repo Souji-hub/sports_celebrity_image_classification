@@ -1,0 +1,10 @@
+PyWavelets 
+opencv-python 
+seaborn
+numpy
+pandas
+matplotlib
+scikit-learn
+scipy
+jupyterlab
+notebook
