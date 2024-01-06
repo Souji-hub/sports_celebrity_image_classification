@@ -4,7 +4,7 @@ import numpy as np
 import base64
 import cv2
 from wavelet import w2d
-
+import os
 __class_name_to_number = {}
 __class_number_to_name = {}
 
@@ -64,7 +64,7 @@ def get_cropped_image_if_2_eyes(image_path, image_base64_data):
 
 #load the model
 def load_saved_artifacts():
-    print("loading saved artifacts...start")
+    print("loading saved artifacts...")
     global __class_name_to_number
     global __class_number_to_name
 
@@ -76,7 +76,7 @@ def load_saved_artifacts():
     if __model is None:
         with open('server/artifacts/model.pkl', 'rb') as f:
             __model = joblib.load(f)
-    print("loading saved artifacts...done")
+    
 
 
 #classify the image using saved model
@@ -105,5 +105,14 @@ def class_number_to_name(class_num):
     return __class_number_to_name[class_num]
     
 if __name__ == '__main__':
+    
+    #testing
     load_saved_artifacts()
-    print(classify_image(get_b64_img(), None))
+    print(classify_image(get_b64_img(), None))  #get image from b64 string
+    print(classify_image(None, 'model/test_images/sharapova1.jpg')) #get image from image path
+    
+    # os.system('cls')
+    # data = classify_image(get_b64_img(), None)
+    # for entry in data:
+    #     print("Class:", entry['class'])
+    #     print("Class Probability:", max(entry['class_probability']))
