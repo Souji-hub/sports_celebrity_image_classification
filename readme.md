@@ -38,7 +38,7 @@ The images were preprocessed using the following steps:
 
 ## File Structure
 
-- **`util.py`:**
+- **`classifier.py`:**
   - Python script containing functions for image preprocessing, model loading, and image classification.
 
 - **`app.py`:**
