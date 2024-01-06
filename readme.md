@@ -2,6 +2,10 @@
 
 This project aims to classify sports celebrity images into five categories: 'lionel_messi', 'maria_sharapova', 'roger_federer', 'serena_williams', and 'virat_kohli'. The classification model is based on Support Vector Machines (SVM), and its performance has been evaluated using GridSearchCV, with SVM yielding the best results.
 
+## Acknowledgments
+
+Special thanks to [Codebasics](https://codebasics.io/) for their valuable guidance and support throughout this project. Their tutorials and resources have been instrumental in the development and success of this Sports Celebrity Image Classification Project.
+
 ## Project Overview
 
 - **Categories:**
@@ -53,7 +57,7 @@ The images were preprocessed using the following steps:
 ## Usage
 
 1. **Setup:**
-   - Ensure required dependencies are installed (`joblib`, `numpy`, `opencv-python`, `scikit-learn`, etc.).
+   - Ensure required dependencies are installed (`joblib`, `numpy`, `opencv-python`, `scikit-learn`, etc.). The requrements can be found in requirements.txt file.
 
 2. **Run Flask Server:**
    - Execute `python app.py` to run the Flask server.

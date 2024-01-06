@@ -1,10 +1,12 @@
 PyWavelets 
 opencv-python 
-seaborn
 numpy
 pandas
 matplotlib
 scikit-learn
 scipy
+joblib
+base64
+flask
 jupyterlab
 notebook
